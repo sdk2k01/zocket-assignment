@@ -1,0 +1,19 @@
+[project]
+name = "zocket-task"
+version = "0.0.1"
+requires-python = ">=3.12"
+authors = [
+    {name = "Soumyadeep Kundu", email = "sdk2k01@gmail.com"}
+]
+dependencies = [
+    "fastapi[standard]",
+    "python-dotenv",
+    "llama-index-core",
+    "llama-index-legacy",
+    "llama-index-llms-mistralai",
+    "llama-index-readers-web",
+    "gradio",
+]
+
+[project.optional-dependencies]
+dev = ["ruff", "black", "pre-commit", "ipdb"]
